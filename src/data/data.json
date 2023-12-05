@@ -1,0 +1,514 @@
+{
+    "zio-http-audit": [
+      {
+        "name": "What is path traversal, and how to prevent it? | Web Security Academy",
+        "url": "https://portswigger.net/web-security/file-path-traversal"
+      },
+      {
+        "name": "Path Traversal | OWASP Foundation",
+        "url": "https://owasp.org/www-community/attacks/Path_Traversal"
+      },
+      {
+        "name": "wstg/document/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include.md at master · OWASP/wstg",
+        "url": "https://github.com/OWASP/wstg/blob/master/document/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include.md"
+      },
+      {
+        "name": "PayloadsAllTheThings/Directory Traversal at master · swisskyrepo/PayloadsAllTheThings",
+        "url": "https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Directory%20Traversal"
+      },
+      {
+        "name": "PayloadsAllTheThings/File Inclusion at master · swisskyrepo/PayloadsAllTheThings",
+        "url": "https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion#summary"
+      },
+      {
+        "name": "Working and unit testing with temporary files in Java",
+        "url": "https://blogs.oracle.com/javamagazine/post/working-and-unit-testing-with-temporary-files-in-java"
+      },
+      {
+        "name": "wstg/document/4-Web_Application_Security_Testing/11-Client-side_Testing/08-Testing_for_Cross_Site_Flashing.md at master · OWASP/wstg",
+        "url": "https://github.com/OWASP/wstg/blob/master/document/4-Web_Application_Security_Testing/11-Client-side_Testing/08-Testing_for_Cross_Site_Flashing.md"
+      },
+      {
+        "name": "How to Hack a Weak JWT Implementation with a Timing Attack | by Tamas Polgar | Medium",
+        "url": "https://medium.com/@TamasPolgar/can-timing-attack-be-a-practical-security-threat-on-jwt-signature-ba3c8340dea9"
+      }
+    ],
+    "distributed-systems": [
+      {
+        "name": "Domain-Driven Design – @hgraca",
+        "url": "https://herbertograca.com/2017/09/07/domain-driven-design/"
+      },
+      {
+        "name": "Gossip Glomers · The Fly Blog",
+        "url": "https://fly.io/blog/gossip-glomers/"
+      },
+      {
+        "name": "Build an Orchestrator in Go (From Scratch) MEAP V09 - build-an-orchestrator-in-go-from-scratch-meap-v09.pdf",
+        "url": "file:///home/buri/Downloads/build-an-orchestrator-in-go-from-scratch-meap-v09.pdf"
+      },
+      {
+        "name": "System Design articles",
+        "url": "https://workat.tech/system-design/article/best-engineering-blogs-articles-videos-system-design-tvwa05b8bzzr"
+      }
+    ],
+    "balkanID": [
+      {
+        "name": "PostgreSQL: Documentation: 15: Chapter 12. Full Text Search",
+        "url": "https://www.postgresql.org/docs/current/textsearch.html"
+      },
+      {
+        "name": "A Journey in E-commerce Search – Dan Palmer",
+        "url": "https://danpalmer.me/2023-01-15-ecommerce-search-journey/#fn:3"
+      },
+      {
+        "name": "PostgreSQL Blog | Crunchy Data",
+        "url": "https://www.crunchydata.com/blog"
+      },
+      {
+        "name": "Soft deletion with PostgreSQL: but with logic on the database!—Martian Chronicles, Evil Martians’ team blog",
+        "url": "https://evilmartians.com/chronicles/soft-deletion-with-postgresql-but-with-logic-on-the-database"
+      }
+    ],
+    "go": [
+      {
+        "name": "ProgrammingPercy",
+        "url": "https://programmingpercy.tech/blog/learn-kubernetes-the-easy-way/"
+      },
+      {
+        "name": "Understanding bytes in Go by building a TCP protocol · Ilija Eftimov 👨‍🚀",
+        "url": "https://ieftimov.com/posts/understanding-bytes-golang-build-tcp-protocol/"
+      }
+    ],
+    "scala": [
+      {
+        "name": "How to compile, run, and package a Scala project with SBT | alvinalexander.com",
+        "url": "https://alvinalexander.com/scala/sbt-how-to-compile-run-package-scala-project/"
+      }
+    ],
+    "aws": [
+      {
+        "name": "AWS Certified Solutions Architect Slides v26.pdf",
+        "url": "https://media.datacumulus.com/aws-saa/AWS%20Certified%20Solutions%20Architect%20Slides%20v26.pdf"
+      },
+      {
+        "name": "AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+        "url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf"
+      },
+      {
+        "name": "AWS Management Console",
+        "url": "https://ap-northeast-1.console.aws.amazon.com/console/home?region=ap-northeast-1#"
+      },
+      {
+        "name": "Ultimate AWS Certified Solutions Architect Associate (SAA) | Udemy",
+        "url": "https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/#reviews"
+      },
+      {
+        "name": "AWS Prescriptive Guidance - Cloud design patterns, architectures, and implementations - cloud-design-patterns.pdf",
+        "url": "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/cloud-design-patterns/cloud-design-patterns.pdf#introduction"
+      }
+    ],
+    "opurtunities": [
+      {
+        "name": "Onboarding | Algora",
+        "url": "https://console.algora.io/onboarding/solver"
+      },
+      {
+        "name": "general - Cloud Native Computing Foundation - Slack",
+        "url": "https://app.slack.com/client/T08PSQ7BQ/C08PSKWPN"
+      },
+      {
+        "name": "CLOTributor",
+        "url": "https://clotributor.dev/"
+      },
+      {
+        "name": "apache/dubbo: The java implementation of Apache Dubbo. An RPC and microservice framework.",
+        "url": "https://github.com/apache/dubbo"
+      },
+      {
+        "name": "How Summer of Bitcoin works",
+        "url": "https://www.summerofbitcoin.org/how-it-works"
+      },
+      {
+        "name": "Hyperledger Mentorship Program - Hyperledger Mentorship Program - Hyperledger Foundation",
+        "url": "https://wiki.hyperledger.org/display/INTERN"
+      },
+      {
+        "name": "LFN Mentorship Program - LF Networking - LF Networking Confluence",
+        "url": "https://wiki.lfnetworking.org/display/LN/LFN+Mentorship+Program"
+      }
+    ],
+    "frontend": [
+      {
+        "name": "One Page Love - One Page Website Inspiration and Templates",
+        "url": "https://onepagelove.com/"
+      },
+      {
+        "name": "Heroicons",
+        "url": "https://heroicons.com/"
+      },
+      {
+        "name": "Browser Rendering Optimization by james-priest",
+        "url": "https://james-priest.github.io/udacity-nanodegree-mws/course-notes/browser-rendering-optimization.html"
+      }
+    ],
+    "dsa": [
+      {
+        "name": "Roadmap",
+        "url": "https://neetcode.io/roadmap"
+      },
+      {
+        "name": "Internal Working of HashMap in Java | by Vikram Gupta | Medium",
+        "url": "https://medium.com/@basecs101/internal-working-of-hashmap-in-java-latest-updated-4c2708f76d2c"
+      },
+      {
+        "name": "Tree For Placement - a list by SHIVAYE - LeetCode",
+        "url": "https://leetcode.com/list/5chyqxsi/"
+      },
+      {
+        "name": "Binary Tree Questions for Technical Interviews - Google, Facebook, Amazon, Microsoft - YouTube",
+        "url": "https://www.youtube.com/watch?v=9D-vP-jcc-Y&t=4650s"
+      },
+      {
+        "name": "Minimum Window Substring - LeetCode",
+        "url": "https://leetcode.com/problems/minimum-window-substring/solutions/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems/"
+      },
+      {
+        "name": "Grind 75 - A better Blind 75 you can customize, by the author of Blind 75",
+        "url": "https://www.techinterviewhandbook.org/grind75?weeks=25&hours=7"
+      },
+      {
+        "name": "\"Mastering Graph Algorithms: A Comprehensive DSA Graph Common Question Patterns CheatSheet\" - LeetCode Discuss",
+        "url": "https://leetcode.com/discuss/study-guide/3900838/%22Mastering-Graph-Algorithms%3A-A-Comprehensive-DSA-Graph-Common-Question-Patterns-CheatSheet%22"
+      },
+      {
+        "name": "Leetcode Sorted",
+        "url": "https://adityarajput.com/leetcode/"
+      },
+      {
+        "name": "Recursion Tree and DAG (Dynamic Programming/DP) - VisuAlgo",
+        "url": "https://visualgo.net/en/recursion"
+      }
+    ],
+    "AI": [
+      {
+        "name": "Start Here with Machine Learning",
+        "url": "https://machinelearningmastery.com/start-here/"
+      },
+      {
+        "name": "Jay Alammar – Visualizing machine learning one concept at a time.",
+        "url": "https://jalammar.github.io/"
+      },
+      {
+        "name": "There's An AI For That - The Biggest AI Aggregator",
+        "url": "https://theresanaiforthat.com/"
+      },
+      {
+        "name": "Text Summarization with NLP: TextRank vs Seq2Seq vs BART | by Mauro Di Pietro | Towards Data Science",
+        "url": "https://towardsdatascience.com/text-summarization-with-nlp-textrank-vs-seq2seq-vs-bart-474943efeb09"
+      },
+      {
+        "name": "(2) On-device Large Language Models with Keras and Android - YouTube",
+        "url": "https://www.youtube.com/watch?v=pNWNMPi0Mvk"
+      }
+    ],
+    "Bookmarks_Toolbar": [
+      {
+        "name": "👍 Color Picker online | HEX Color Picker | HTML Color Picker",
+        "url": "https://imagecolorpicker.com/#"
+      },
+      {
+        "name": "About CRDTs • Conflict-free Replicated Data Types",
+        "url": "https://crdt.tech/"
+      },
+      {
+        "name": "",
+        "url": "data:"
+      },
+      {
+        "name": "Debugging - Runtime / this-firefox",
+        "url": "about:debugging#/runtime/this-firefox"
+      }
+    ],
+    "Mobile_Bookmarks": [
+      {
+        "name": "GPS Guides Robotic Car - Circuit Cellar",
+        "url": "https://circuitcellar.com/research-design-hub/gps-guides-robotic-car-2/"
+      },
+      {
+        "name": "Arduino Powered Autonomous Vehicle : 12 Steps (with Pictures) - Instructables",
+        "url": "https://www.instructables.com/Arduino-Powered-Autonomous-Vehicle/"
+      },
+      {
+        "name": "(PDF) An overview of development GPS navigation for autonomous car",
+        "url": "https://www.researchgate.net/publication/261088859_An_overview_of_development_GPS_navigation_for_autonomous_car"
+      },
+      {
+        "name": "ESP32 Access Point (AP) for Web Server | Random Nerd Tutorials",
+        "url": "https://randomnerdtutorials.com/esp32-access-point-ap-web-server/"
+      },
+      {
+        "name": "Build your first Computer Vision App on Android or iOS",
+        "url": "https://developers.google.com/codelabs/tflite-computer-vision-mobile#0"
+      },
+      {
+        "name": "Stream Processing and Data Analysis with ksqlDB | by João Pedro | Towards Data Science",
+        "url": "https://towardsdatascience.com/stream-processing-and-data-analysis-with-ksqldb-97f1ca4fcf6a"
+      },
+      {
+        "name": "Apache Kafka Vs Apache Spark: What are the differences?",
+        "url": "https://www.knowledgehut.com/blog/big-data/kafka-vs-spark"
+      },
+      {
+        "name": "How to visualize Sensor data using Grafana and InfluxDB",
+        "url": "https://gabrieltanner.org/blog/grafana-sensor-visualization/"
+      },
+      {
+        "name": "Monitor IoT Devices in The Things Network with Prometheus and Grafana",
+        "url": "https://lupyuen.github.io/articles/prometheus"
+      },
+      {
+        "name": "Misconfigured Kafdrop Puts Companies' Apache Kafka Completely Exposed - Spectral",
+        "url": "https://spectralops.io/blog/misconfigured-kafdrop-puts-companies-apache-kafka-completely-exposed/"
+      },
+      {
+        "name": "Real-Time Analytics and Monitoring Dashboards with Kafka and Rockset",
+        "url": "https://www.confluent.io/blog/analytics-with-apache-kafka-and-rockset/"
+      },
+      {
+        "name": "Apache Kafka: real-time data streaming app | LogRocket Blog",
+        "url": "https://blog.logrocket.com/apache-kafka-real-time-data-streaming-app/"
+      },
+      {
+        "name": "How the HMC5883L 3-axis digital magentomter works",
+        "url": "https://www.best-microcontroller-projects.com/hmc5883l.html"
+      },
+      {
+        "name": "Streaming real-time Telegraf metrics using Grafana Live | Grafana Labs",
+        "url": "https://grafana.com/blog/2021/08/16/streaming-real-time-telegraf-metrics-using-grafana-live/"
+      },
+      {
+        "name": "Presentations and videos with engaging visuals for hybrid teams | Prezi",
+        "url": "https://prezi.com/"
+      },
+      {
+        "name": "Storing and processing real-time time-series data with Influx DB | by Eresh Gorantla | Dev Genius",
+        "url": "https://blog.devgenius.io/storing-and-processing-real-time-time-series-data-with-influx-db-5ba9bb015539"
+      },
+      {
+        "name": "WonsultingAI by Wonsulting - Build a resume & Grow your network with AI",
+        "url": "https://www.wonsulting.ai/"
+      },
+      {
+        "name": "Go file - working with files in Golang",
+        "url": "https://zetcode.com/golang/file/"
+      },
+      {
+        "name": "PP - Mastering WebSockets With Go",
+        "url": "https://programmingpercy.tech/blog/mastering-websockets-with-go/"
+      },
+      {
+        "name": "Practical Go: Real world advice for writing maintainable Go programs",
+        "url": "https://dave.cheney.net/practical-go/presentations/qcon-china.html"
+      },
+      {
+        "name": "Golang Web Scraper Tutorial | Oxylabs",
+        "url": "https://oxylabs.io/blog/golang-web-scraper"
+      },
+      {
+        "name": "Elasticsearch and IoT: Match Made in Heaven? - Skillfield",
+        "url": "https://skillfield.com.au/elasticsearch-and-iot-match-made-in-heaven/"
+      },
+      {
+        "name": "What is Elasticsearch and why use it? | Severalnines",
+        "url": "https://severalnines.com/blog/what-is-elasticsearch-and-why-use-it/"
+      },
+      {
+        "name": "Industrial Internet of Things (IIoT) with Elasticsearch | Elastic Blog",
+        "url": "https://www.elastic.co/blog/industrial-internet-of-things-iiot-with-the-elastic-stack"
+      },
+      {
+        "name": "Track IoT Devices with MQTT and Elastic Stack",
+        "url": "https://www.synaptique.com/track-iot-devices-with-mqtt-and-elastic-stack/"
+      },
+      {
+        "name": "Full stack open",
+        "url": "https://fullstackopen.com/en/"
+      },
+      {
+        "name": "",
+        "url": "https://levelup.gitconnected.com/designing-token-based-authentication-system-flow-868893870e03"
+      },
+      {
+        "name": "Bounties - Replit",
+        "url": "https://replit.com/bounties"
+      },
+      {
+        "name": "Distributed Logging Architecture in the Container Era - Treasure Data Blog",
+        "url": "https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-in-the-container-era/?dismissed=yes"
+      },
+      {
+        "name": "",
+        "url": "https://millionjs.org/"
+      },
+      {
+        "name": "Authentication & Authorization in Microservices Architecture - Part I - DEV Community",
+        "url": "https://dev.to/behalf/authentication-authorization-in-microservices-architecture-part-i-2cn0"
+      },
+      {
+        "name": "Learn Kafka Programming Lesson: Complete Kafka Producer with Java",
+        "url": "https://www.conduktor.io/kafka/complete-kafka-producer-with-java/"
+      },
+      {
+        "name": "How to create Kafka consumers and producers in Java | Red Hat Developer",
+        "url": "https://developers.redhat.com/articles/2022/06/02/how-create-kafka-consumers-and-producers-java#the_kafka_producer_implementation"
+      },
+      {
+        "name": "Notification system design using Java and Kafka Example - AahFoo",
+        "url": "https://www.aahfoo.com/2023/02/20/internet/notification-system-design-using-java-and-kafka-example/"
+      },
+      {
+        "name": "Neeva - Search powered by AI",
+        "url": "https://neeva.com/"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/"
+      },
+      {
+        "name": "How I wrote my own \"proper\" programming language",
+        "url": "https://mukulrathi.com/create-your-own-programming-language/intro-to-compiler/"
+      },
+      {
+        "name": "Weaviate - DocArray 0.21.0 documentation",
+        "url": "https://docarray.jina.ai/advanced/document-store/weaviate/"
+      },
+      {
+        "name": "Understand BLOOM, the Largest Open-Access AI, and Run It on Your Local Computer | by Cristian Arteaga | Towards Data Science",
+        "url": "https://towardsdatascience.com/run-bloom-the-largest-open-access-ai-model-on-your-desktop-computer-f48e1e2a9a32"
+      },
+      {
+        "name": "CS231n Convolutional Neural Networks for Visual Recognition",
+        "url": "https://cs231n.github.io/neural-networks-1/"
+      },
+      {
+        "name": "10 minutes to pandas — pandas 2.0.1 documentation",
+        "url": "https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html"
+      },
+      {
+        "name": "Go Concurrency Pattern: Worker Pool | by Syafdia Okta | Code Chasm | Medium",
+        "url": "https://medium.com/code-chasm/go-concurrency-pattern-worker-pool-a437117025b1"
+      },
+      {
+        "name": "@hgraca",
+        "url": "https://herbertograca.com/"
+      },
+      {
+        "name": "How to avoid unnecessary repaints",
+        "url": "https://www.peerigon.com/en/blog/css-animation-how-to-avoid-unnecessary-repaints/"
+      },
+      {
+        "name": "Free services - Microsoft Azure",
+        "url": "https://portal.azure.com/?Microsoft_Azure_Education_correlationId=4d1f73b7-f8e7-4ba5-baa6-10a201a04786&Microsoft_Azure_Education_newA4E=true&Microsoft_Azure_Education_asoSubGuid=8ea9e63a-e390-49d0-a7a1-ae8d7704c7ae#view/Microsoft_Azure_Billing/FreeServicesBlade"
+      },
+      {
+        "name": "How To Create Advanced Animations With CSS — Smashing Magazine",
+        "url": "https://www.smashingmagazine.com/2022/10/advanced-animations-css/"
+      },
+      {
+        "name": "",
+        "url": "https://3dtransforms.desandro.com/carousel"
+      },
+      {
+        "name": "What does CSR, SSR, SSG and ISR means and why should you care?",
+        "url": "https://www.flavienbonvin.com/data-building-strategy-for-nextjs-app/"
+      },
+      {
+        "name": "Patterns of Distributed Systems",
+        "url": "https://martinfowler.com/articles/patterns-of-distributed-systems/"
+      },
+      {
+        "name": "HN - Recommendation",
+        "url": "https://hn-recommend.julienc.me/?q=Ressources%20to%20learn%20about%20distributed%20systems"
+      },
+      {
+        "name": "SQL Server and Azure SQL index architecture and design guide - SQL Server | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver16"
+      },
+      {
+        "name": "Learn JavaScript for free - 9-hour interactive tutorial",
+        "url": "https://scrimba.com/learn/learnjavascript"
+      },
+      {
+        "name": "Learn SQL - Online SQL Terminal - Practice SQL Querys",
+        "url": "https://www.sql-practice.com/"
+      },
+      {
+        "name": "Migrating a 2TB database in 7.5 minutes - Fathom Analytics",
+        "url": "https://usefathom.com/blog/migrating-our-database"
+      },
+      {
+        "name": "Goroutines Under The Hood - Blog by Osamh aloqaily",
+        "url": "https://osmh.dev/posts/goroutines-under-the-hood"
+      },
+      {
+        "name": "Recommendation System Series Part 1: An Executive Guide to Building Recommendation System | by James Le | Towards Data Science",
+        "url": "https://towardsdatascience.com/recommendation-system-series-part-1-an-executive-guide-to-building-recommendation-system-608f83e2630a"
+      },
+      {
+        "name": "Andreessen Horowitz | Software Is Eating the World",
+        "url": "https://a16z.com/#1"
+      },
+      {
+        "name": "Components - Abdur's Notes",
+        "url": "https://notes.arkalim.org/notes/components/"
+      },
+      {
+        "name": "Unlimited Access to Medium Articles A Simple Method for Seamless Reading |",
+        "url": "https://canererden.com/blog/2023/unlock-medium/"
+      },
+      {
+        "name": "Tags and Postgres Arrays, a Purrrfect Combination",
+        "url": "https://www.crunchydata.com/blog/tags-aand-postgres-arrays-a-purrfect-combination"
+      },
+      {
+        "name": "Pearson VUE - Select exam options",
+        "url": "https://wsr.pearsonvue.com/testtaker/registration/SelectExamOptionsPage/AWS?conversationId=910191"
+      },
+      {
+        "name": "Pearson VUE - Agree to online exam and Amazon Web Services policies",
+        "url": "https://wsr.pearsonvue.com/testtaker/registration/PolicyAcceptancePage/AWS?conversationId=910191"
+      },
+      {
+        "name": "🎧 Top 10 Best Episodes of the IH Podcast : r/Entrepreneur",
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/v8g81i/top_10_best_episodes_of_the_ih_podcast/"
+      },
+      {
+        "name": "Godot Game Development Machine Learning Masterclass | by mukhta rihil ahda | Oct, 2023 | Medium",
+        "url": "https://medium.com/@rihilahdamukhta/godot-game-development-machine-learning-masterclass-9480e8fec025"
+      },
+      {
+        "name": "SlipOns/ Slides – Spiffers",
+        "url": "https://www.spiffers.in/collections/slipons"
+      },
+      {
+        "name": "antirez/kilo: A text editor in less than 1000 LOC with syntax highlight and search.",
+        "url": "https://github.com/antirez/kilo"
+      },
+      {
+        "name": "Build A Text Editor with Flutter UI under 1000 Lines of Code | by Marvin Sanchez | Level Up Coding",
+        "url": "https://levelup.gitconnected.com/build-a-text-editor-with-flutter-ui-under-1000-lines-of-code-5a9dd2a053da"
+      },
+      {
+        "name": "Serverless browser automation with AWS Lambda and Puppeteer",
+        "url": "https://www.pluralsight.com/resources/blog/cloud/serverless-browser-automation-with-aws-lambda-and-puppeteer"
+      },
+      {
+        "name": "Encore — Escape your backend development burdens",
+        "url": "https://encore.dev/"
+      },
+      {
+        "name": "Overview | Docs | gnet",
+        "url": "https://gnet.host/docs/about/overview/"
+      }
+    ]
+}
