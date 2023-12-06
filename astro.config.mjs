@@ -4,6 +4,5 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
     integrations: [tailwind()],
-    site: 'https://Mayhul-Jindal.github.io',
-    base: '/bookit',
+    site: 'https://mayhul-jindal.github.io',
 });
