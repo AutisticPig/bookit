@@ -3,33 +3,11 @@
 <!-- Now I am asuming data.json file to be in a database. So I wan to first extract it like a stream and make my frontend read it -->
 
 <script>
-    import * as Viva from 'vivagraphjs';
-    
-    var graph = Viva.Graph.graph();
+    import * as Viva from 'vivagraphjs';    
+    import { buildCircleNodeShader, WebglCircle } from '../scripts/circle';
 
-    const arr: Number[] = []
-    for (let i = 0; i < 100; i++) {
-        arr.push(i)
-        graph.addNode(i)
-    }
-
-    graph.forEachNode((node) => {
-        if (node.id % 2 == 0 && node.id < 99) {
-            graph.addLink(node.id, node.id + 1)
-        }
-    })
-
-    class Node {
-        i;
-        constructor() {
-            this.i = 101
-        }
-
-        addNodes(){
-            graph.addNode(this.i);
-            this.i++;
-        }
-    }
+    var graphGenerator = Viva.Graph.generator()
+    var graph = graphGenerator.grid(10, 10);
 
     // specify where it should be rendered:
     var layout = Viva.Graph.Layout.forceDirected(graph, {
@@ -38,7 +16,17 @@
         dragCoeff: 0.02,
         gravity: -1.2
     });
+
+    // yeh github se uthaya hain
     var graphics = Viva.Graph.View.webglGraphics();
+    var nodeColor = 0x009ee8, nodeSize = 12;
+    var circleNode = buildCircleNodeShader();
+    graphics.setNodeProgram(circleNode);
+    graphics.node(function (node) {
+        return new WebglCircle(nodeSize, nodeColor);
+    });
+
+    
     var renderer = Viva.Graph.View.renderer(
         graph, 
         {
@@ -46,7 +34,8 @@
             graphics: graphics
         }
     );
-    
+   
+
     const visButton = document.getElementById('visualize')
     const downArrow = document.getElementById('down-arrow')
     visButton?.addEventListener('click', () => {

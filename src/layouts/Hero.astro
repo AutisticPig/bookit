@@ -2,7 +2,7 @@
     <slot name="graph">
         <p>this is the fallback content</p>
     </slot>
-    <div class="hero-content text-center mt-36">
+    <div class="hero-content text-center mt-36 relative">
       <div class="max-w-md">
         <h1 class="text-4xl font-extrabold sm:text-6xl">SIMPLE BOOKMARKING PLATFORM</h1>
         <p class="py-5 text-xs sm:text-base">
@@ -10,6 +10,10 @@
             Discover, organize, and socialize with Bookit.
             Take full control over your shared content and connect with like-minded individuals. 
         </p>
+
+        <slot name="message">
+        </slot>
+        
         <button id="visualize" class="btn btn-primary btn-sm sm:btn-md">VISUALIZE NOW</button>
         <div id="down-arrow" class="hidden">
             <slot name="down-arrow">
