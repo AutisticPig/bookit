@@ -6,36 +6,42 @@
     import * as Viva from 'vivagraphjs';    
     import { buildCircleNodeShader, WebglCircle } from '../scripts/circle';
 
+    // create a graph
+    // - dekho merko basically graph banana hain kese bhi. Render ho jayega uski tension engine ki hain
+    // - I cannot make graph interactable yaha peh. Yeh sirf graph data structure hain
     var graphGenerator = Viva.Graph.generator()
-    var graph = graphGenerator.grid(10, 10);
+    var graph = graphGenerator.grid(50, 100)
 
-    // specify where it should be rendered:
-    var layout = Viva.Graph.Layout.forceDirected(graph, {
-        springLength: 50, // Increase the spring length
-        springCoeff: 0.0008, // Adjust the spring coefficient
-        dragCoeff: 0.02,
-        gravity: -1.2
-    });
+    // layout of graph:
+    var layout = Viva.Graph.Layout.forceDirected(
+        graph, 
+        {
+            springLength: 50, // Increase the spring length
+            springCoeff: 0.0008, // Adjust the spring coefficient
+            dragCoeff: 0.02,
+            gravity: -1.2
+        }
+    );
 
-    // yeh github se uthaya hain
+    // webgl stuff --legacy ke wajah se I have to stick with js for sometime--
     var graphics = Viva.Graph.View.webglGraphics();
-    var nodeColor = 0x009ee8, nodeSize = 12;
+    var nodeColor = 0x009ee8, nodeSize = 10;
     var circleNode = buildCircleNodeShader();
     graphics.setNodeProgram(circleNode);
-    graphics.node(function (node) {
+    graphics.node(() => {
         return new WebglCircle(nodeSize, nodeColor);
     });
 
-    
     var renderer = Viva.Graph.View.renderer(
         graph, 
         {
             container: document.getElementById('canvas'),
+            layout: layout,
             graphics: graphics
         }
     );
-   
-
+    
+    // Remove the hero section and add the down arrow button
     const visButton = document.getElementById('visualize')
     const downArrow = document.getElementById('down-arrow')
     visButton?.addEventListener('click', () => {
@@ -43,8 +49,6 @@
         visButton.classList.add('hidden')
         downArrow?.classList.remove('hidden')
     })
-
-
 </script>
 
 
