@@ -1,46 +1,122 @@
 <div id="canvas" class="w-full h-full bg-base-100"></div> 
 
-<!-- Now I am asuming data.json file to be in a database. So I wan to first extract it like a stream and make my frontend read it -->
 
 <script>
+    // TODO:
+    // - Library used is VivaGraphJS which is very old and has some legacy code. So refactor it later
+    // - Clean code is not my priority right now. I just want to get it working
+
     import * as Viva from 'vivagraphjs';    
-    import { buildCircleNodeShader, WebglCircle } from '../scripts/circle';
+    import { buildCircleNodeShader, WebglCircle } from './scripts/circle';
+import parseColor from 'vivagraphjs/src/WebGL/parseColor';
+    
+
+    const data = {
+        golang: [
+            {
+                name: 'medium-article-1',
+                url: 'https://www.google.com/'
+            },
+            {
+                name: 'medium-article-2',
+                url: 'https://www.google.com/'
+            },
+            {
+                name: 'medium-article-3',
+                url: 'https://www.google.com/'
+            }
+        ],
+
+        engineering: [
+            {
+                name: 'medium-article-4',
+                url: 'https://www.google.com/'
+            },
+            {
+                name: 'medium-article-5',
+                url: 'https://www.google.com/'
+            },
+            {
+                name: 'medium-article-6',
+                url: 'https://www.google.com/'
+            }
+        ],
+    } 
 
     // create a graph
     // - dekho merko basically graph banana hain kese bhi. Render ho jayega uski tension engine ki hain
     // - I cannot make graph interactable yaha peh. Yeh sirf graph data structure hain
-    var graphGenerator = Viva.Graph.generator()
-    var graph = graphGenerator.grid(50, 100)
+    var graph = Viva.Graph.graph();
+    
+    Object.keys(data).forEach((key) => {
+        graph.addNode(key, "parent");
+
+        data[key].forEach((article) => {
+            graph.addNode(article.name, article.url)
+            // link mein meta data bhi add ho sakta hain
+            graph.addLink(key, article.name);
+        })
+    })
 
     // layout of graph:
-    var layout = Viva.Graph.Layout.forceDirected(
-        graph, 
-        {
-            springLength: 50, // Increase the spring length
-            springCoeff: 0.0008, // Adjust the spring coefficient
-            dragCoeff: 0.02,
-            gravity: -1.2
-        }
-    );
+    // var layout = Viva.Graph.Layout.forceDirected(
+    //     graph, 
+    //     {
+    //         springLength: 50, // Increase the spring length
+    //         springCoeff: 0.0008, // Adjust the spring coefficient
+    //         dragCoeff: 0.02,
+    //         gravity: -1.2
+    //     }
+    // );
 
-    // webgl stuff --legacy ke wajah se I have to stick with js for sometime--
+    // webgl context
     var graphics = Viva.Graph.View.webglGraphics();
-    var nodeColor = 0x009ee8, nodeSize = 10;
+    
+    // node UI
+    var parentColor = 0xd1d5db, childColor = 0x404040;
     var circleNode = buildCircleNodeShader();
     graphics.setNodeProgram(circleNode);
-    graphics.node(() => {
-        return new WebglCircle(nodeSize, nodeColor);
+    // can add more properties to the node here
+    graphics.node((node) => {
+        return node.data == "parent" ? new WebglCircle(20, parentColor) : new WebglCircle(10, childColor);
     });
 
+    // TODO: linkUI with arrow
+    graph.forEachLink((link) => {
+        console.log(link)
+        // graphics.getLinkUI(link.id).color = childColor;
+    });    
+
+
+    // renderer
     var renderer = Viva.Graph.View.renderer(
         graph, 
         {
             container: document.getElementById('canvas'),
-            layout: layout,
+            // layout: layout,
             graphics: graphics
         }
     );
     
+    // helper functions for stuff
+    function highlightRelatedLinks (node, on) {
+        graph.getLinks(node.id).forEach(link => {
+            graphics.getLinkUI(link.id).color = on ? parseColor('#a991f7') : childColor;
+        });
+    };
+
+    // listening to mouse events
+    var events = Viva.Graph.webglInputEvents(graphics, graph);
+    events.mouseEnter((node) => {
+        highlightRelatedLinks(node, true);
+
+    }).mouseLeave((node) => {
+        highlightRelatedLinks(node, false);
+
+    }).dblClick((node) => {
+        node.data == "parent" ? console.log("parent peh click hua hain") : window.open(node.data);
+    });
+
     // Remove the hero section and add the down arrow button
     const visButton = document.getElementById('visualize')
     const downArrow = document.getElementById('down-arrow')
@@ -50,6 +126,3 @@
         downArrow?.classList.remove('hidden')
     })
 </script>
-
-
-<!-- <canvas id="canvas-1" class="bg-orange-500 w-full h-full">alt text here</canvas>   -->

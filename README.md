@@ -7,6 +7,7 @@ bla bla
 - [ ] Search for bookmarks
 - [ ] And obviously a graph view of bookmarks
   
+
 ## TODO
 - [X] Setup astro + Bun + Tailwind + DaisyUI + Canvas with basic settings (lib is acting funny)
 - [ ] Maybe setup qwik??? DOnt know why yet. Learn hydration vs resumibility and web workers
@@ -17,7 +18,13 @@ bla bla
 - [ ] Render my bookmarkdata with different tags (todo, private)
 - [ ] Read the web performance section on MDN docs (This has some serious content)
 
+- [X] parent child distinction
+- [X] enough data to get started
+- [ ] arrow line in webgl
+
+
 ## Javascript practices
 - use only let, const
 - gc will remove local variables after the function is executed
 - We have a global memory 
+- 
