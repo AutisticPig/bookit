@@ -1,3 +1,5 @@
+import Viva from 'vivagraphjs';
+
 export function WebglCircle(size, color) {
     this.size = size;
     this.color = color;

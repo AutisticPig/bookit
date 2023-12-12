@@ -1,10 +1,9 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Navbar from "../layouts/Navbar.astro";
 import Hero from "../layouts/Hero.astro"
 import Graph from "../components/Graph.astro";
-import DownArror from "../components/DownArror.astro";
+import DownArrow from "../components/DownArrow.astro";
 import Pricing from "../layouts/Pricing.astro";
-import PricingCard from "../components/PricingCard.astro";
 ---
 
 <!DOCTYPE html>
@@ -12,27 +11,33 @@ import PricingCard from "../components/PricingCard.astro";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivagraphjs/0.10.0/vivagraph.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vivagraphjs/0.10.0/vivagraph.js"></script> -->
     <title>Prototype</title>
 </head>
 <body>
     <header class="absolute">
-        <Navbar />
+        <Navbar title="BOOKIT" data={["DOWNLOAD", "COMMUNITY", "PRICING", "BLOGS", "FEEDBACK"]}/>
     </header>
     <main>
         <article>
-            <Hero>
+            <Hero 
+                heading={["SIMPLIFYING", "BOOKMARK", "MANAGEMENT"]}, 
+                body={[["Sync across", "all devices"], ["Graph", "clusters"], ["Full text", "search"]]}, 
+                button="visualize"
+            >
                 <Graph slot="graph"/>
-                <DownArror slot="down-arrow"/>
+                <DownArrow link="#features" slot="down-arrow"/>
             </Hero>
         </article>
         <article>
             <Pricing>
-                <!-- yaha yeh astro props use honge -->
-                <PricingCard />
-                <PricingCard />
+                
             </Pricing>
         </article>
     </main>
 </body>
 </html>
+
+
+<!--
+ -->

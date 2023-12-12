@@ -1,0 +1,42 @@
+---
+interface Props {
+    title: string
+    data: string[]
+}
+
+const {title, data} = Astro.props
+---
+
+<nav class="navbar fixed w-full z-10 backdrop-blur-sm bg-base-100/5">
+
+    <div class="navbar-start">
+        <a class="btn btn-ghost text-xl">{title}</a>
+    </div>
+
+    <div class="hidden sm:navbar-center sm:flex">
+        <ul class="menu menu-horizontal px-2">
+            {data.slice(1, -1).map((text) => (
+                <li><a>{text}</a></li>
+            ))}
+        </ul>
+    </div>
+
+    <div class="navbar-end">
+        <details class="dropdown dropdown-bottom dropdown-end sm:hidden">
+            <summary role="button" class="btn btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </summary>
+            <ul tabindex="0" class="menu dropdown-content z-10 p-2 bg-base-100 w-52">
+                <li class="btn btn-sm btn-active btn-primary"><a>{data[0]}</a></li>
+                {data.slice(1).map((text) => (
+                    <li><a>{text}</a></li>
+                ))}
+            </ul>
+        </details>
+
+        <div>
+            <button class="hidden lg:btn lg:btn-outline">{data[data.length - 1]}</button>
+            <button class="hidden sm:btn sm:btn-primary">{data[0]}</button>
+        </div>
+    </div>
+</nav>

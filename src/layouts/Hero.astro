@@ -1,25 +1,42 @@
+---
+interface Props {
+    heading: string[]
+    body: string[][]
+    button: string
+}
+
+const {heading, body, button} = Astro.props
+---
+
 <div class="hero hero-overlay min-h-screen">
+    <!-- canvas here -->
     <slot name="graph">
         <p>this is the fallback content</p>
     </slot>
-    <div class="hero-content text-center mt-36 relative">
-      <div class="max-w-md">
-        <h1 class="text-4xl font-extrabold sm:text-6xl">SIMPLE BOOKMARKING PLATFORM</h1>
-        <p class="py-5 text-xs sm:text-base">
-            Bookit revolutionizes your bookmarks ! <br>
-            Discover, organize, and socialize with Bookit.
-            Take full control over your shared content and connect with like-minded individuals. 
-        </p>
 
-        <slot name="message">
-        </slot>
-        
-        <button id="visualize" class="btn btn-primary btn-sm sm:btn-md">VISUALIZE NOW</button>
-        <div id="down-arrow" class="hidden">
-            <slot name="down-arrow">
-                <p>this is the fallback content</p>
-            </slot>
-        </div>
+    <div id="hero" class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-extrabold sm:text-6xl">
+            {heading.map((text) => (
+                <span class="block">{text}</span>
+            ))}
+        </h1>
+        <div class="flex flex-nowrap justify-around pb-5 text-sm text-neutral-500 sm:text-lg">
+            {body.map((col) => (
+                <div>
+                    {col.map((text) => (
+                        <span class="block">{text}</span>
+                    ))}
+                </div>
+            ))}
+        </div>    
+        <button id="visualize" class="btn btn-primary btn-sm sm:btn-md">{button}</button>
       </div>
     </div>
+    <div id="down-arrow" class="hidden mt-auto mb-8">
+        <slot name="down-arrow">
+            <p>this is the fallback content</p>
+        </slot>
+    </div>
 </div>
+
