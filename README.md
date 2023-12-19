@@ -34,7 +34,6 @@ bla bla
 - [ ] Exploring information on graph based machine learning
   - [ ] Stanford CS224W: Machine Learning with Graphs | 2021 | Lecture 1.1 - Why Graphs
   - [ ] 
- 
 
 ## Js/Ts performance boost
 - [ ] understanding ui a bit deeper {dont where this knowledge will be used but why not ?}
